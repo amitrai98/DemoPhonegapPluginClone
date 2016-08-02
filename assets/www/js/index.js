@@ -53,7 +53,7 @@ app.initialize();
 
 document.getElementById("btn").addEventListener("click", function(){
     alert(1)
-hello.greet("hrllo...",success,err);
+hello.initializeVideoCalling(person, success, err);
 });
 var success = function(msg){
     alert(2);
@@ -62,3 +62,5 @@ var success = function(msg){
 var err = function(){
     alert('err');
 }
+
+var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
